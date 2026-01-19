@@ -181,7 +181,10 @@ class TestFilenameMapOrder:
         patterns = [pattern for pattern, _ in FILENAME_MAP]
         assert len(patterns) == len(set(patterns)), "Duplicate patterns found"
 
-    def test_no_duplicate_fund_names(self):
-        """Should not have duplicate fund names"""
+    def test_multiple_patterns_same_fund_allowed(self):
+        """Multiple filename patterns can map to the same fund (e.g., ASX 200)"""
         fund_names = [name for _, name in FILENAME_MAP]
-        assert len(fund_names) == len(set(fund_names)), "Duplicate fund names found"
+        # S&P/ASX 200 Accumulation has 3 patterns: 'asx-200 ', 'asx-200.', 'fs-sp-asx-200 '
+        # This is intentional - different filename formats for same index
+        asx200_count = fund_names.count('S&P/ASX 200 Accumulation')
+        assert asx200_count == 3, "ASX 200 should have 3 filename patterns"

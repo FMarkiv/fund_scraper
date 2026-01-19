@@ -203,6 +203,9 @@ class TestCalculateOutperformance:
         data = pd.DataFrame({
             'Fund Name': ['Fund A', 'Fund B', 'Fund C', 'Benchmark'],
             '1 Mth': [5.0, None, 7.0, 4.0],
+            '3 Mth': [10.0, None, 12.0, 9.0],
+            '1 Yr pa': [15.0, None, 18.0, 14.0],
+            '3 Yr pa': [10.0, None, 12.0, 9.0],
             'Is Benchmark': [False, False, False, True]
         })
 
