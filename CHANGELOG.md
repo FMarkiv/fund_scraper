@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2025-01-19
+
+### Testing
+
+#### New Test Suite
+- **tests/test_generate_newsletter.py**: Unit tests for newsletter generation
+  - `TestParsePercentage`: 11 tests for percentage parsing edge cases
+  - `TestGetPreviousMonth`: 3 tests for date calculations
+  - `TestMergeData`: 3 tests for data merging logic
+  - `TestCalculateOutperformance`: 3 tests for benchmark comparison
+  - `TestLoadCommentary`: 2 tests for markdown parsing
+  - `TestCommentaryToHtml`: 3 tests for HTML conversion
+
+- **tests/test_fetch_benchmarks.py**: Unit tests for benchmark fetching
+  - `TestGetMonthEndDate`: 5 tests for month-end calculations
+  - `TestGetPriceAtDate`: 6 tests for price lookup with fallbacks
+  - `TestCalculateReturns`: 3 tests for return calculations
+  - `TestGetLastMonthEnd`: 3 tests for date logic
+  - `TestBenchmarksConfig`: 4 tests for configuration validation
+
+- **tests/test_merge_sp_data.py**: Unit tests for S&P data merging
+  - `TestParsePct`: 7 tests for percentage parsing
+  - `TestMatchFilename`: 18 tests for filename-to-fund mapping
+  - `TestFilenameMapOrder`: 4 tests for mapping order validation
+
+#### Configuration
+- **pytest.ini**: Pytest configuration with verbose output
+- **requirements.txt**: Added pytest>=7.0.0 and pytest-cov>=4.0.0
+
+---
+
 ## [1.0.1] - 2025-01-19
 
 ### Code Quality Improvements
