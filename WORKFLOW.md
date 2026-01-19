@@ -115,11 +115,22 @@ Use the last day of the target month (e.g., `--date 2025-01-31` for January news
 
 ---
 
-### Step 3.2: Write Commentary
-**When:** While scraper runs, or after
+### Step 3.2: Reset & Write Commentary
+**When:** After reviewing preview data
 **Time:** 15-30 minutes
 
-Edit `commentary.md` with your market insights:
+```bash
+REM Reset to blank template
+scripts\reset_commentary.bat
+
+REM Generate preview with blank commentary first
+python generate_newsletter.py --month YYYY-MM --preview
+
+REM Review the data, then edit commentary.md
+notepad commentary.md
+```
+
+Add your market insights to each section:
 
 ```markdown
 ## Fixed Income

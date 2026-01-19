@@ -118,3 +118,6 @@ linkedin_post_*.txt
 
 # Coverage reports
 coverage_report_*.txt
+
+# Commentary backups
+commentary_backup_*.md
