@@ -111,3 +111,9 @@ Old/
 
 # Log files
 *.log
+
+# Generated LinkedIn posts
+linkedin_post_*.txt
+
+# Coverage reports
+coverage_report_*.txt
