@@ -95,6 +95,7 @@ benchmark_data.csv
 
 # PDF scraper output
 performance_data.csv
+index/performance_data.csv
 
 # Downloaded PDFs
 index/pdfs/

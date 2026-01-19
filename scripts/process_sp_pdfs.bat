@@ -41,6 +41,7 @@ if errorlevel 1 (
     exit /b 1
 )
 cd ..
+echo     Output: index/performance_data.csv
 
 REM Step 2: Merge into manual_data.xlsx
 echo.

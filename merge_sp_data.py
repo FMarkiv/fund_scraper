@@ -46,14 +46,15 @@ def match_filename(filename):
     return None
 
 def main():
-    # Load S&P PDF scraper output
+    # Load S&P PDF scraper output from index folder
+    sp_data_path = 'index/performance_data.csv'
     try:
-        sp_df = pd.read_csv('performance_data.csv')
+        sp_df = pd.read_csv(sp_data_path)
     except FileNotFoundError:
-        print("❌ performance_data.csv not found. Run pdfscraper.py first.")
+        print(f"❌ {sp_data_path} not found. Run index/pdfscraper.py first.")
         return
-    
-    print(f"Loaded {len(sp_df)} rows from performance_data.csv")
+
+    print(f"Loaded {len(sp_df)} rows from {sp_data_path}")
     
     # Map filenames to fund names
     sp_df['Fund Name'] = sp_df['filename'].apply(match_filename)
