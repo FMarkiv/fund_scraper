@@ -24,25 +24,22 @@ def extract_total_return(pdf_path):
                 if line.strip() == "Total Return" and i + 1 < len(lines):
                     # Next line should have the data
                     data_line = lines[i + 1]
-                    
-                    # Extract all numbers (including decimals and negatives)
-                    # This will get: index_level, then all the percentages
-                    numbers = re.findall(r'-?\d+[\.,]\d+%|-?\d+%', data_line)
-                    
-                    # Skip the index level (first number), start from the returns
-                    if len(numbers) > 1:
-                        values = numbers[1:]  # Skip index level
-                        
+
+                    # Extract only percentage values (with % sign)
+                    # This correctly skips the index level which has no %
+                    percentages = re.findall(r'-?\d+[\.,]?\d*%', data_line)
+
+                    if len(percentages) >= 1:
+                        # S&P format: 1Mo, 3Mo, YTD, 1Yr, 3Yr, 5Yr, 10Yr
                         return {
                             "filename": os.path.basename(pdf_path),
-                            "index_level": numbers[0],
-                            "1_mo": values[0] if len(values) > 0 else None,
-                            "3_mos": values[1] if len(values) > 1 else None,
-                            "ytd": values[2] if len(values) > 2 else None,
-                            "1_yr": values[3] if len(values) > 3 else None,
-                            "3_yrs": values[4] if len(values) > 4 else None,
-                            "5_yrs": values[5] if len(values) > 5 else None,
-                            "10_yrs": values[6] if len(values) > 6 else None,
+                            "1_mo": percentages[0] if len(percentages) > 0 else None,
+                            "3_mos": percentages[1] if len(percentages) > 1 else None,
+                            "ytd": percentages[2] if len(percentages) > 2 else None,
+                            "1_yr": percentages[3] if len(percentages) > 3 else None,
+                            "3_yrs": percentages[4] if len(percentages) > 4 else None,
+                            "5_yrs": percentages[5] if len(percentages) > 5 else None,
+                            "10_yrs": percentages[6] if len(percentages) > 6 else None,
                         }
             
             print(f"⚠️  Could not parse 'Total Return' row in {os.path.basename(pdf_path)}")
