@@ -430,13 +430,16 @@ def generate_table_html(asset_class, config, commentary_html, outperformance=Non
     # Legend
     benchmark_label = config.get('benchmark_label')
     legend_benchmark = f'<span class="legend-item"><span class="legend-color benchmark"></span> {benchmark_label}</span>' if benchmark_label else ''
-    
+
+    # Add gics-wide class for GICS Sectors table
+    table_class = 'table-container gics-wide' if asset_class == 'GICS Sectors' else 'table-container'
+
     html = f'''
 <h2>{asset_class}</h2>
 
 {commentary_html}
 
-<div class="table-container">
+<div class="{table_class}">
     <div class="table-overflow">
         <table id="{table_id}Table">
             <thead>{fixed_headers}
@@ -599,7 +602,7 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
 
         main {{
             flex: 1;
-            max-width: 42em;
+            max-width: 50em;
         }}
 
         nav {{
@@ -685,11 +688,27 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
             margin: 1.5em 0;
             width: 100%;
             overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }}
 
         .table-overflow {{
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
+            position: relative;
+        }}
+
+        /* Mobile scroll shadow indicator */
+        @media (max-width: 767px) {{
+            .table-overflow {{
+                background:
+                    linear-gradient(to right, white 30%, rgba(255,255,255,0)),
+                    linear-gradient(to right, rgba(255,255,255,0), white 70%) 100% 0,
+                    linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0)),
+                    linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0)) 100% 0;
+                background-repeat: no-repeat;
+                background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+                background-attachment: local, local, scroll, scroll;
+            }}
         }}
 
         table {{
@@ -708,6 +727,14 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
             tbody td,
             tbody th {{
                 padding: 0.1rem 0.5rem !important;
+            }}
+
+            /* Truncate fund names on mobile */
+            tbody td:first-child {{
+                max-width: 140px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }}
         }}
 
@@ -752,6 +779,7 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
             user-select: none;
             white-space: nowrap;
             transition: background-color 0.2s ease;
+            min-width: 5.5em;
         }}
 
         .column-header th:first-child {{
@@ -772,6 +800,8 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
             align-items: center;
             justify-content: flex-end;
             gap: 0.25rem;
+            position: relative;
+            padding-right: 14px;
         }}
 
         .chevron {{
@@ -779,6 +809,8 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
             height: 10px;
             display: inline-block;
             flex-shrink: 0;
+            position: absolute;
+            right: 0;
         }}
 
         tbody tr {{
@@ -824,7 +856,7 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
         }}
 
         tbody td.highlight-min {{
-            background-color: #fef08a;
+            background-color: #fef9c3;
             font-weight: 600;
         }}
 
@@ -834,30 +866,31 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
         }}
 
         .table-legend {{
-            margin-top: 1rem;
-            padding: 1rem;
+            margin-top: 0;
+            padding: 0.5rem 0.75rem;
             background-color: #fafaf9;
             border: 1px solid #e5e7eb;
-            font-size: 0.85em;
-            color: #555;
+            border-top: none;
+            font-size: 0.75em;
+            color: #666;
         }}
 
         .legend-items {{
             display: flex;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 1rem;
         }}
 
         .legend-item {{
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.3rem;
         }}
 
         .legend-color {{
             display: inline-block;
-            width: 1rem;
-            height: 1rem;
+            width: 0.75rem;
+            height: 0.75rem;
             flex-shrink: 0;
             border: 1px solid #ddd;
         }}
@@ -867,18 +900,23 @@ def generate_full_html(merged_data, commentary, month_str, manual_path='manual_d
         }}
 
         .legend-color.min {{
-            background-color: #fef08a;
+            background-color: #fef9c3;
         }}
 
         .legend-color.benchmark {{
             background-color: #fff4e5;
             border-color: #f90;
         }}
+
+        /* GICS table wider container */
+        .table-container.gics-wide {{
+            max-width: 60em;
+        }}
     </style>
 </head>
 <body>
 <header>
-<nav><a href="https://ausyield.com.au/newsletter.html">Newsletter</a> <a href="https://ausyield.com.au/essays.html">Essays</a></nav>
+<nav><a href="index.html">Home</a> <a href="newsletter.html">Newsletter</a> <a href="essays.html">Essays</a> <a href="contact.html">Contact</a></nav>
 </header>
 
 <main>

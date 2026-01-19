@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Market Update - November 2025</title>
+    <meta name="description" content="November 2025 Monthly Market Commentary and Fund Rankings">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+            line-height: 1.6;
+            color: #111;
+            background-color: #fffff8;
+            display: flex;
+            flex-direction: column;
+            max-width: 55em;
+            margin: 0 auto;
+            padding: 1.5em 1em;
+        }
+
+        header {
+            width: 100%;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 1.5em;
+        }
+
+        main {
+            flex: 1;
+            max-width: 50em;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+        }
+
+        nav a {
+            margin-bottom: 0.5em;
+            font-size: 0.9em;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+            font-weight: normal;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.4em;
+        }
+
+        h2.essay-title {
+            font-weight: bold;
+            margin-top: 2.5em;
+            border-top: 1px solid #ddd;
+            padding-top: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        p, ul {
+            margin-bottom: 1.2em;
+        }
+
+        ul {
+            padding-left: 1.2em;
+        }
+
+        li {
+            margin-bottom: 0.25em;
+        }
+
+        li > ul {
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
+        }
+
+        .image-container {
+            margin: 1.5em 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+            display: inline-block;
+        }
+
+        .image-container img.standard {
+            max-width: 600px;
+            height: auto;
+        }
+
+        .image-container figcaption {
+            font-size: 0.8em;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.5em;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ddd;
+            margin: 2.5em 0;
+        }
+
+        /* TABLE STYLES */
+        .table-container {
+            background: white;
+            border: 1px solid #e5e7eb;
+            margin: 1.5em 0;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .table-overflow {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+        }
+
+        /* Mobile scroll shadow indicator */
+        @media (max-width: 767px) {
+            .table-overflow {
+                background:
+                    linear-gradient(to right, white 30%, rgba(255,255,255,0)),
+                    linear-gradient(to right, rgba(255,255,255,0), white 70%) 100% 0,
+                    linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0)),
+                    linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0)) 100% 0;
+                background-repeat: no-repeat;
+                background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+                background-attachment: local, local, scroll, scroll;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85em;
+        }
+
+        @media (max-width: 767px) {
+            table {
+                font-size: 10px;
+            }
+
+            thead tr:not(.column-header) td,
+            thead tr:not(.column-header) th,
+            tbody td,
+            tbody th {
+                padding: 0.1rem 0.5rem !important;
+            }
+
+            /* Truncate fund names on mobile */
+            tbody td:first-child {
+                max-width: 140px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        thead tr:not(.column-header) {
+            background-color: #f3f4f6;
+            border-bottom: 1px solid #d1d5db;
+        }
+
+        thead tr:not(.column-header) td {
+            padding: 0.2rem 1rem;
+            font-weight: normal;
+            color: #111;
+            text-align: right;
+            border-right: 1px solid #d1d5db;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        thead tr:not(.column-header) td:first-child {
+            text-align: left;
+        }
+
+        thead tr:not(.column-header) td:last-child {
+            border-right: none;
+        }
+
+        .column-header {
+            background-color: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+
+        .column-header th {
+            padding: 0.35rem 1rem;
+            text-align: right;
+            font-weight: 600;
+            border-right: 1px solid #1a252f;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+            transition: background-color 0.2s ease;
+            min-width: 5.5em;
+        }
+
+        .column-header th:first-child {
+            text-align: left;
+            cursor: default;
+        }
+
+        .column-header th:last-child {
+            border-right: none;
+        }
+
+        .column-header th:hover:not(:first-child) {
+            background-color: #1a252f;
+        }
+
+        .sort-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.25rem;
+            position: relative;
+            padding-right: 14px;
+        }
+
+        .chevron {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            flex-shrink: 0;
+            position: absolute;
+            right: 0;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e5e7eb;
+            transition: background-color 0.15s ease;
+        }
+
+        tbody tr.benchmark {
+            background-color: #fff4e5;
+        }
+
+        tbody tr:not(.benchmark):nth-child(even) {
+            background-color: #fafaf9;
+        }
+
+        tbody tr:not(.benchmark):hover {
+            background-color: #f5f5f4;
+        }
+
+        tbody td {
+            padding: 0.2rem 1rem;
+            border-right: 1px solid #e5e7eb;
+            text-align: right;
+            white-space: nowrap;
+            color: #111;
+        }
+
+        tbody td:first-child {
+            text-align: left;
+            font-weight: 500;
+            border-right: 1px solid #e5e7eb;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        tbody td:last-child {
+            border-right: none;
+        }
+
+        tbody td.highlight-max {
+            background-color: #d1d5db;
+            font-weight: 600;
+        }
+
+        tbody td.highlight-min {
+            background-color: #fef9c3;
+            font-weight: 600;
+        }
+
+        tbody td.negative {
+            color: #dc2626;
+            font-weight: 600;
+        }
+
+        .table-legend {
+            margin-top: 0;
+            padding: 0.5rem 0.75rem;
+            background-color: #fafaf9;
+            border: 1px solid #e5e7eb;
+            border-top: none;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .legend-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .legend-color {
+            display: inline-block;
+            width: 0.75rem;
+            height: 0.75rem;
+            flex-shrink: 0;
+            border: 1px solid #ddd;
+        }
+
+        .legend-color.max {
+            background-color: #d1d5db;
+        }
+
+        .legend-color.min {
+            background-color: #fef9c3;
+        }
+
+        .legend-color.benchmark {
+            background-color: #fff4e5;
+            border-color: #f90;
+        }
+
+        /* GICS table wider container */
+        .table-container.gics-wide {
+            max-width: 60em;
+        }
+
+        /* Essay section titles - bold */
+        h3.essay-subtitle {
+            font-weight: bold;
+        }
+
+        /* Essay subsections - smaller */
+        h3.essay-subsection {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Notes section */
+        .notes-section {
+            font-size: 0.9em;
+            color: #444;
+        }
+
+        .notes-section p {
+            margin-bottom: 1em;
+        }
+
+        .notes-section a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .notes-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Article images - centered with max width, clickable */
+        article img {
+            display: block;
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin: 1em auto;
+            cursor: pointer;
+        }
+
+        article a > img:hover {
+            opacity: 0.9;
+        }
+
+        /* Source attribution lines */
+        .source-line {
+            text-align: center;
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            margin-top: -0.5em;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav><a href="index.html">Home</a> <a href="newsletter.html">Newsletter</a> <a href="essays.html">Essays</a> <a href="contact.html">Contact</a></nav>
+</header>
+
+<main>
+<article>
+<h1>Monthly Market Update – November 2025</h1>
+
+<p>This update includes performance data and commentary across asset classes and strategies.</p>
+
+<p>All tables are sorted by 1-month performance by default, with benchmark rows highlighted where relevant.</p>
+
+<p>Data is current as of end-November 2025.</p>
+
+
+<h2>Fixed Income</h2>
+
+<ul>
+<li>Bond funds right at the bottom for 1yr+, and this is before the big run in yields</li>
+<li>You know 6 months ago, the Aus 2YR was 3.275%, its over 4% now</li>
+<li>As I said last month, chance of rate cut is zero.<ul>
+<li>We need more inflation data and I know there is lots of noise around policy, but the reality is the average person's hip pocket doesn't care about policy or the nuances or inflation.</li>
+<li>Price level increase = pain.</li>
+</ul>
+</li>
+<li>A question of how much exposure do you have to non-inflation linked securities that generate yield?</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="fixedIncomeTable">
+            <thead>                <tr><td>% of funds that outperformed CPI</td><td>76.0%</td><td>88.0%</td><td>92.0%</td><td>87.5%</td></tr>
+                <tr><td>% of funds that outperformed CPI+1%</td><td>76.0%</td><td>88.0%</td><td>84.0%</td><td>70.8%</td></tr>
+                <tr><td>% of funds that outperformed CPI+2%</td><td>72.0%</td><td>84.0%</td><td>52.0%</td><td>58.3%</td></tr>
+                <tr><td>% of funds that outperformed CPI+3%</td><td>56.0%</td><td>80.0%</td><td>20.0%</td><td>45.8%</td></tr>
+                <tr class="column-header">
+                    <th>Fixed Income</th>
+                                        <th onclick="handleSort('fixedIncome', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('fixedIncome', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('fixedIncome', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('fixedIncome', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="fixedIncomeBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<div class="table-legend">
+    <div class="legend-items">
+        <span class="legend-item"><span class="legend-color max"></span> Best performer</span>
+        <span class="legend-item"><span class="legend-color min"></span> Worst performer</span>
+        <span class="legend-item"><span class="legend-color benchmark"></span> Benchmark</span>
+    </div>
+</div>
+
+<h2>Private Credit</h2>
+
+<ul>
+<li>If you look at 3yr returns, there is little difference in outcomes between private credit and the higher yield/higher risk funds in the above Fixed Income table.</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="privateCreditTable">
+            <thead>
+                <tr class="column-header">
+                    <th>Private Credit</th>
+                                        <th onclick="handleSort('privateCredit', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('privateCredit', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('privateCredit', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('privateCredit', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="privateCreditBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>Domestic Large Cap</h2>
+
+<ul>
+<li>One of the more disgusting months I've seen in a while where many funds got hit by a name or 2.</li>
+<li>Funnily lots of those that got hit were concentrated managers who held a name that blew up.</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="domesticLargeCapTable">
+            <thead>
+                <tr><td>% of funds that outperformed benchmark</td><td>78.6%</td><td>50.0%</td><td>50.0%</td><td>39.3%</td></tr>
+                <tr class="column-header">
+                    <th>Domestic Large Cap</th>
+                                        <th onclick="handleSort('domesticLargeCap', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('domesticLargeCap', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('domesticLargeCap', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('domesticLargeCap', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="domesticLargeCapBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>Domestic Mid/Small Cap</h2>
+
+<ul>
+<li>Much like the above concentration + some of the small cap favourites took a breather.</li>
+<li>Gigantic difference in outcomes, Paradice utterly murdering performance.</li>
+<li>Bennelong blow up goes from bad to worse. 38% delta vs the benchmark</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="domesticMidSmallCapTable">
+            <thead>
+                <tr><td>% of funds that outperformed benchmark</td><td>3.7%</td><td>44.4%</td><td>55.6%</td><td>88.0%</td></tr>
+                <tr class="column-header">
+                    <th>Domestic Mid/Small Cap</th>
+                                        <th onclick="handleSort('domesticMidSmallCap', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('domesticMidSmallCap', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('domesticMidSmallCap', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('domesticMidSmallCap', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="domesticMidSmallCapBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>Domestic Micro Cap</h2>
+
+<ul>
+<li>Micro caps continue to work. Most exciting part of the market.</li>
+<li>Bennelong fund unfairly wrapped up in the Bennelong debacle</li>
+<li>Perennial. Dude. How are you losing money in this environment?</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="domesticMicroCapTable">
+            <thead>
+                <tr><td>% of funds that outperformed benchmark</td><td>53.3%</td><td>6.7%</td><td>46.7%</td><td>73.3%</td></tr>
+                <tr class="column-header">
+                    <th>Domestic Micro Cap</th>
+                                        <th onclick="handleSort('domesticMicroCap', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('domesticMicroCap', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('domesticMicroCap', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('domesticMicroCap', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="domesticMicroCapBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>International Equities</h2>
+
+<ul>
+<li>Finally some dispersion this month with the big AI names taking a breather(ish).</li>
+<li>On the AI plays (ie Mag7 et all), there is a huge performance differential between the OpenAI related names (MSFT, NVDA, ORCL) and the Google+Anthropic names (GOOG, AMZN, ACN).<ul>
+<li>The group of companies that are rallying at any given time seen to be the ones exposed to the leading model.</li>
+</ul>
+</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="internationalEquitiesTable">
+            <thead>
+                <tr><td>% of funds that outperformed benchmark</td><td>35.9%</td><td>23.1%</td><td>30.8%</td><td>28.9%</td></tr>
+                <tr class="column-header">
+                    <th>International Equities</th>
+                                        <th onclick="handleSort('internationalEquities', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('internationalEquities', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('internationalEquities', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('internationalEquities', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="internationalEquitiesBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>Infra + REITs</h2>
+
+<ul>
+<li>A-REITs copping a walloping now, higher 10-year yields in Aus flowing through to valuations.<ul>
+<li>If you have a view on Aussie rates and them going lower at some point, a nice little reminder that this is one of the more levered ways to play the space.  </li>
+</ul>
+</li>
+<li>Forget defensive vs growth, if we're talking rates going up it hits everything the whole way down because everything has its own duration, then do you hold fixed income or this stuff? What has a better real rate outcome?</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="infraReitsTable">
+            <thead>
+                <tr class="column-header">
+                    <th>Infra + REITs</th>
+                                        <th onclick="handleSort('infraReits', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('infraReits', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('infraReits', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('infraReits', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="infraReitsBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>Other</h2>
+
+<ul>
+<li>Gold and Silver, jeez</li>
+<li>I'd argue that GDX is still immensely cheap here compared to where Gold $ is today</li>
+<li>Long Short funds that were short CBA finally killed it, you can almost tell who was short CBA as it hid some of the poorer mid-cap performers.</li>
+</ul>
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="otherTable">
+            <thead>
+                <tr><td>% of funds that outperformed benchmark</td><td>20.0%</td><td>20.0%</td><td>13.3%</td><td>6.9%</td></tr>
+                <tr class="column-header">
+                    <th>Other</th>
+                                        <th onclick="handleSort('other', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('other', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('other', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('other', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="otherBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>GICS Sectors</h2>
+
+<ul>
+<li>Gold Index is +100% over a year and +25%pa over 10 years, that is a 10 bagger in 10 years. This is the index we are talking!</li>
+<li>The healthcare debacle, now the worst performing index over 1, 3 and 5 years.<ul>
+<li>Can you believe its even underperformed Energy?</li>
+</ul>
+</li>
+<li>The Nasdaq might be up ~21% over the last year, but our tech sector has managed to underperform by almost 40%!<ul>
+<li>Thanks Richard...</li>
+</ul>
+</li>
+</ul>
+
+<div class="table-container gics-wide">
+    <div class="table-overflow">
+        <table id="gicsSectorsTable">
+            <thead>
+                <tr><td>% of funds that outperformed benchmark</td><td>66.7%</td><td>33.3%</td><td>50.0%</td><td>66.7%</td><td>50.0%</td><td>33.3%</td></tr>
+                <tr class="column-header">
+                    <th>GICS Sectors</th>
+                                        <th onclick="handleSort('gicsSectors', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('gicsSectors', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('gicsSectors', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('gicsSectors', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                    <th onclick="handleSort('gicsSectors', 4)"><div class="sort-header"><span>5 Yr pa</span></div></th>
+                    <th onclick="handleSort('gicsSectors', 5)"><div class="sort-header"><span>10 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="gicsSectorsBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<h2>Crypto</h2>
+
+<ul>
+<li>I wrote enough last month, if you think that we get back to ATH, you're underwriting sort of 30-40% capital returns<ul>
+<li>But plenty of downside risk!</li>
+</ul>
+</li>
+</ul>
+<hr />
+
+<div class="table-container">
+    <div class="table-overflow">
+        <table id="cryptoTable">
+            <thead>
+                <tr class="column-header">
+                    <th>Crypto</th>
+                                        <th onclick="handleSort('crypto', 0)"><div class="sort-header"><span>1 Mth</span></div></th>
+                    <th onclick="handleSort('crypto', 1)"><div class="sort-header"><span>3 Mth</span></div></th>
+                    <th onclick="handleSort('crypto', 2)"><div class="sort-header"><span>1 Yr pa</span></div></th>
+                    <th onclick="handleSort('crypto', 3)"><div class="sort-header"><span>3 Yr pa</span></div></th>
+                </tr>
+            </thead>
+            <tbody id="cryptoBody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+<h2 class="essay-title">Thought of the Month</h2>
+
+<h3 id="essay-a-hill-to-die-on" class="essay-subtitle">A Hill To Die On</h3>
+<p>There is a chart that I believe represents the ultimate form of chart crime, one that fund managers, allocators, advisers, and consultants all use to look clever.</p>
+<p>Apollo just released their latest version. Apollo nicely insinuating that you should sell public equities for private markets. And boy do they have something to sell!</p>
+<p><a href="/Images/Nov25/apollo.jpeg"><img alt="CAPE vs Forward Returns - Apollo" src="/Images/Nov25/apollo.jpeg" /></a></p>
+<p class="source-line">Source: <a href="https://www.apolloacademy.com/expected-returns-in-public-equities-over-the-coming-years/">Apollo Academy</a></p>
+<p>So, by this chart, emphatically forward returns for the next decade will be 0%.</p>
+<p>Maybe? Maybe not? I do not know and neither do I care (okay maybe I do), but what I don't like is using it to make overarching predictions.</p>
+<p>When charting a relationship, you hope your data points are independent as precision and robustness relies on independent observations. If one observation shares 9 out of 10 values with the next observation, how independent is it really?</p>
+<p>Serial correlation, autocorrelation, call it what you want! The R-squared is so high because almost every data point overlaps with its neighbours. The January 2010 data point shares 9 years of returns with the February 2010 data point, which shares 9 years with March 2010, and so on.</p>
+<p>If you flip it the other way, what happens when you reduce the overlapping window?</p>
+<p><a href="/Images/Nov25/jpmorgan.png"><img alt="JPMorgan reduced window" src="/Images/Nov25/jpmorgan.png" /></a></p>
+<p class="source-line">Source: <a href="https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/market-insights/guide-to-the-markets/mi-guide-to-the-markets-us.pdf">J.P. Morgan Guide to Markets</a></p>
+<p>At 5 years, R-squared drops to 32%. At 1 year, R-squared collapses to 6%. Thank you, JPMorgan, for showing us what everyone else obscures. Forward looking 1yr +20% to -20%...</p>
+<p>Okay some more charts from me, this is charting <a href="https://en.wikipedia.org/wiki/Cyclically_adjusted_price-to-earnings_ratio">Shiller CAPE</a> from 1980 onwards using monthly data:</p>
+<p><a href="/Images/Nov25/cape-monthly.png"><img alt="CAPE monthly data" src="/Images/Nov25/cape-monthly.png" /></a></p>
+<p class="source-line">Source: Ausyield</a></p>
+<p>And what if we swap out CAPE for trailing PE ratios for the S&amp;P500? However in this one I show you what non-overlapping, independent observations look like:</p>
+<p><a href="/Images/Nov25/pe-non-overlapping.png"><img alt="PE non-overlapping" src="/Images/Nov25/pe-non-overlapping.png" /></a></p>
+<p class="source-line">Source: Ausyield</a></p>
+<p>How many non-overlapping periods since 1880? 14 (ish?) Fourteen! That's astrology! That's not even enough data to draw lines on a chart!</p>
+<p>Let's go one step further. We know what returns projected by CAPE were, and know the actual realised returns, so why not compare the projected vs realised returns?</p>
+<p><a href="/Images/Nov25/cape-projected-realised.png"><img alt="Projected vs realised returns" src="/Images/Nov25/cape-projected-realised.png" /></a></p>
+<p><a href="https://aptuscapitaladvisors.com/beware-cape-crusaders-limitations-of-shillers-ratio-in-modern-market-valuation/">Aptus Capital Advisers</a> have kindly done this for us and realised returns are usually 5-10% above the projected returns based on CAPE data.</p>
+<p>PE ratios &amp; CAPE are challenged when comparing data across long periods of time. There has been significant changes to how goodwill, D&amp;A, capex, stock-based comp and a few other bits &amp; bobs are calculated. The PE ratio in 1980 and today in my view are not directly comparable.</p>
+<p>I'm not saying forward returns aren't going to be zero, but it's worth taking a beat and acknowledging the crimes of this chart and that it is being advocated for by a private markets manager.</p>
+<p>One final observation, if Apollo genuinely believes public market returns will be zero for the next decade, shouldn't they be trying to monetise their portfolio today? If forward returns are truly zero, why aren't PE firms dumping everything onto public markets while multiples are still elevated? (1, 2)</p>
+<p>The chart says one thing. The behaviour says another.</p>
+<hr />
+<h3 id="essay-concentrating-on-risk" class="essay-subtitle">Concentrating on Risk</h3>
+<p>I've written about this before but it's worth revisiting.</p>
+<p>Whenever you hear a portfolio manager at a concentrated fund talk about position sizing based on reward rather than risk, you should get a little concerned. And when that conversation happens after a big drawdown, you should get very concerned.</p>
+<h3 id="essay-playing-life-on-hard-mode" class="essay-subsection">Playing life on hard mode</h3>
+<p>Managing a concentrated portfolio is playing active management on hard mode. Each decision matters more. The stakes are higher. One is more susceptible to anchoring, confirmation and overconfidence biases.</p>
+<p>Imagine a stock down 20% (or 25%). You need +25% (or +33%) just to get back to even. When the stakes are that high it's near impossible not to have an emotional response. If you're reading this, it's probably happened to you too, you tell yourself you were just early, or the market is stupid, or you messed up the entry and it's priced in now. And often the right move is to do nothing.</p>
+<p>And sometimes the fund doubles down. The position that was 10% of the portfolio is now 15%. The update calls go on for longer, the upside cases more elaborate. And "risk" often totally disappears from the vocab.</p>
+<h3 id="essay-sizing-based-on-risk" class="essay-subsection">Sizing Based on Risk</h3>
+<p>Sizing based on how much you can afford to lose not how much you think you can make. I keep coming back to this, it really does save you a lot of pain &amp; difficulty.</p>
+<p>Everyone will be wrong at some point in time no matter what, so you try and not let the losers sink you. I've seen many funds blow up by conviction-based sizing where the focus on maximising expected return instead of minimising losses, combined with concentration, eventually catches up with you.</p>
+<p>And blowups do something nasty to judgment. It's hard to admit you're wrong when you've lost that much money.</p>
+<h3 id="essay-what-to-listen-for" class="essay-subsection">What To Listen For</h3>
+<p>A few things that have always made me nervous:</p>
+<p>Someone tells me "we run concentrated and size on conviction". These two things combined are problematic. People who run concentrated tend to have trouble changing their minds. Blend it with conviction and you get overconfidence.</p>
+<p>A PM or analyst spends forty minutes on upside, zero on risk.</p>
+<p>"This is now our largest position" (after a drawdown). The position got larger as it fell and they added and is always presented as a feature. Okay this is a tricky one I'll admit, it works sometimes but eventually you will get one wrong. Happened to me more than I'd care to admit, when someone tells you a position which got crushed is a 10-15% weight and here's all the upside â€” eek. You have a small drawdown window before a stock will end up on the wrong side of momentum factor. Technical selling pressure is a bitch (3).</p>
+<p>This is not a complete set of rules and rather a reflection of stuff I've seen that has worked in the past. It serves me well and hope it serves others well too. You can apply this to an external actively managed portfolio or your own personal one.</p>
+<p>Don't blow it up!</p>
+<hr />
+<h3 id="essay-its-all-over" class="essay-subtitle">It's All Over</h3>
+<p>Claude Opus 4.5 is the single most significant thing that has ever happened in my career.</p>
+<p>Do not take that statement lightly.</p>
+<p>This is entirely embarrassing but I need to vocalise it because it needs to be said. The realisation kicked in this month for me as I am slowly coming around to the fact that everything I do on a computer and everything I do on a technical level, AI can do better now.</p>
+<p>EVERYTHING.</p>
+<p>Yeah yeah its not Artificial General Intelligence (AGI) but we're 95% of the way there. I don't need to wait for AGI. What is AGI to me anyway?</p>
+<p>Yes, it can't do my dishes. Yes, it can't join multiple thoughts together yet because the window for thought is too small. This is all going to change in the future. 
+New discoveries are made because humans interface ideas across generations. Archimedes sat in a bathtub and a couple of hundred years later, we're floating oil rigs on the ocean. Our knowledge and principles are passed down from one individual to another and the combined exploration &amp; discovery is what pushes our frontier forward.</p>
+<p>AI cannot make those connections yet but it will get there. Sooner rather than later.</p>
+<p>Everything is indeed, computer.</p>
+
+
+
+<h2>Thanks</h2>
+
+<p>Well done for making it this far and it pleases me you are reading this sentence. I thank you for reading the above and I hope it has provoked some thoughts.</p>
+<hr />
+<div class="notes-section"><h3>Notes</h3>
+<p><p>(1) For what its worth, I'm more comfortable saying there is a bubble in private markets, not public. OpenAI val is dumb. OpenAI is a private company and frankly if there is one place I can say the words a "bubble" exists in, it is private markets, not public.</p>
+<p><p>(2) Some time ago I was being pestered by "mid-market" PE managers to allocate. Fascinating stuff, why would you allocate to one when every PE fund was looking to buy up listed companies. If PE was acquiring listed companies and the IPO market was dead, it meant that PE thought listed markets were cheap. Look at the ASX, an inordinate number of companies have gone private since 2022. Lends into another idea that private equity and private credit are not "alternatives". They are equity and credits and they should be competing for capital from those sleeves. Where you can allocate to either private and public managers across all sectors.</p>
+<p><p>(3) I've looked at long-short funds for a long time and tried to understand the point of shorting. Generally, in Aus when you see a LS fund, they're shorting to lever up their longs and usually shorting doesn't make them alpha. Furthermore, most people are geared to think about making money by going long, whereas shorting absolutely cooks brains. It has its place, shorting reduces vol at some points in time and depends on where you are in the market cap, shorting can be quite fruitful. I can count on one hand Australian LS funds that have generated positive alpha from their short book.</p>
+<p>Now, that is a naive way of looking at things, let's be completely honest. Not all managers are fundamental, some are systematic. And their short-book alpha is persistent. I've looked at fundamental managers my whole life and recently gotten into properly understanding systematic (I'm learning machine learning and XGBoost at the moment, fundamental x systematic is the future I tell you). In fact, the deeper I dive into things, I realise that approx 50% of systematic momentum alpha comes from shorts!</p>
+<p><a href="/Images/Nov25/LS.png"><img alt="Long-short alpha breakdown" src="/Images/Nov25/LS.png" /></a></p>
+<p class="source-line">Source: See <a href="https://papers.ssrn.com/sol3/Delivery.cfm/18b598a2-d3c6-4baf-963d-dfa222edff75-MECA.pdf?abstractid=4025868&amp;mirid=1&amp;type=2">Table 3 here</a></p>
+<p>There are various different types of windows and measures of momentum factor. Say if you take away the 12 month return of a security from its 2 month return and then map that on a gradient and you can get a structure for how long alpha may persist from there. Awesome study by HIMCO showing that momentum factor returns last around 14-17 months. The signal period (12 mth vs 7mth) doesn't change duration of the factor. Why? God who knows!</p>
+<p><a href="/Images/Nov25/holding.png"><img alt="Formation v Holding preiod" src="/Images/Nov25/holding.png" /></a></p>
+<p class="source-line">Source: HIMCO Insights 2018</p>
+<p>Now back to our fundamental concentrated manager, they allocate a whole bunch of capital to a security which falls a little bit and doesn't bounce. If you've ever deeply looked at an order book, day in, day out, you'll sometimes see there is some prick selling into every open and close, someone clearly trying to get out.
+And if there is persistent selling, at the 2 or 3 month mark, the stock (if large enough) will filter into the bench at some systematic fund. If the fundamental earnings were remotely mediocre (remember, cockroaches never come in ones!), momentum is a sensational factor for generating returns. Winners and losers persist. Buy stuff that is going up and sell stuff that is going down.</p>
+<p>All of a sudden, mister concentrated fundamental manager over here is trying to work out who keeps selling. While the that other seller in market starts watching the stock trade lower and lower as someone (the systematic fund) keeps taking out any volume. Then the seller decides to push the selling harderâ€¦ And in a few months time you see the "god candle" when mister concentrated fundamental manager admits defeat and sells at the bottom.</p>
+<p>Ask your active/fundamental manager about this next time, most don't even have a view on this. Technical selling pressure is indeed a bitch.</p></div>
+
+
+</article>
+</main>
+
+<script>
+// ============================================
+// TABLE CONFIGURATION & DATA
+// ============================================
+
+const tableConfig = {
+    fixedIncome: {
+        tableId: 'fixedIncomeTable',
+        bodyId: 'fixedIncomeBody',
+        hasFixedHeaders: true,
+        data: [
+            { name: 'Fortlake Sigma Opportunities Fund', values: [2.36, 2.68, 1.75, 6.99], isBenchmark: false },
+            { name: 'Fortlake Real-Higher Income Fund', values: [1.47, 2.04, 5.44, 8.54], isBenchmark: false },
+            { name: 'Ardea Real Outcome Fund', values: [0.77, 2.15, 6.27, 3.50], isBenchmark: false },
+            { name: 'Fortlake Real-Income Fund', values: [0.67, 1.76, 6.99, 10.63], isBenchmark: false },
+            { name: 'PIMCO Income Fund - Wholesale Class', values: [0.64, 2.55, 8.68, 6.60], isBenchmark: false },
+            { name: 'Brandywine Global Income Optimiser Fund Class A', values: [0.50, 2.13, 6.15, 5.78], isBenchmark: false },
+            { name: 'Ares Global Credit Income Fund', values: [0.44, 1.23, 5.82, 7.68], isBenchmark: false },
+            { name: 'Kapstream Absolute Return Income Fund', values: [0.40, 1.51, 6.22, 6.21], isBenchmark: false },
+            { name: 'Torica Absolute Return Income Fund', values: [0.35, 1.33, 6.31, 7.48], isBenchmark: false },
+            { name: 'Aquasia Short-term Income', values: [0.31, 1.13, 5.24, null], isBenchmark: false },
+            { name: 'PIMCO Capital Securities Fund - Wholesale Class', values: [0.30, 2.82, 10.10, 9.00], isBenchmark: false },
+            { name: 'T. Rowe Price Global High Income', values: [0.28, 1.28, 8.14, 9.41], isBenchmark: false },
+            { name: 'Vanguard Global Aggregate Bond Index Fund (Hedged)', values: [0.28, 1.71, 3.51, 3.18], isBenchmark: true },
+            { name: 'PIMCO Global Bond Fund - Wholesale Class', values: [0.26, 2.00, 5.70, 4.73], isBenchmark: false },
+            { name: 'Daintree Core Income Trust', values: [0.25, 1.29, 5.44, 6.86], isBenchmark: false },
+            { name: 'Australian CPI+3% (non-seasonal adj)', values: [0.24, 1.11, 6.81, 6.78], isBenchmark: true },
+            { name: 'PIMCO Global Credit Fund - Wholesale Class', values: [0.21, 2.03, 5.99, 5.20], isBenchmark: false },
+            { name: 'Daintree High Income Trust', values: [0.20, 1.35, 6.01, 7.89], isBenchmark: false },
+            { name: 'Macquarie Corporate Bond Fund', values: [0.18, 1.07, 5.55, 5.53], isBenchmark: false },
+            { name: 'MFS Global Opportunistic Fixed Income Trust', values: [0.18, 1.74, 4.55, 4.38], isBenchmark: false },
+            { name: 'Australian CPI+2% (non-seasonal adj)', values: [0.16, 0.86, 5.81, 5.78], isBenchmark: true },
+            { name: 'Brandywine Global Opportunistic Fixed Income Trust', values: [0.08, 1.67, 5.48, 2.95], isBenchmark: false },
+            { name: 'Australian CPI+1% (non-seasonal adj)', values: [0.07, 0.61, 4.81, 4.78], isBenchmark: true },
+            { name: 'Australian CPI (non-seasonal adj)', values: [-0.01, 0.36, 3.81, 3.78], isBenchmark: true },
+            { name: 'Yarra Enhanced Income Fund', values: [-0.09, 0.80, 6.54, 7.86], isBenchmark: false },
+            { name: 'Bentham Global Income Fund', values: [-0.09, 1.20, 4.34, 5.14], isBenchmark: false },
+            { name: 'PIMCO Australian Low Duration Bond Fund', values: [-0.35, 0.17, 5.58, 4.64], isBenchmark: false },
+            { name: 'PIMCO Australian Bond Fund - Wholesale Class', values: [-0.90, -0.32, 5.52, 4.08], isBenchmark: false },
+            { name: 'Vanguard Australian Fixed Interest Index Fund', values: [-0.91, -0.47, 4.18, 3.05], isBenchmark: true },
+            { name: 'CC JCB Active Bond Fund', values: [-0.99, -0.69, 3.33, 2.17], isBenchmark: false },
+            { name: 'Antipodes Emerging Market Debt Fund', values: [-1.10, 1.43, 8.41, 9.13], isBenchmark: false }
+        ]
+    },    privateCredit: {
+        tableId: 'privateCreditTable',
+        bodyId: 'privateCreditBody',
+        hasFixedHeaders: false,
+        data: [
+            { name: 'Alceon Debt Income Fund Ordinary', values: [0.78, 2.25, 9.12, 9.50], isBenchmark: false },
+            { name: 'MA Credit Opportunities Fund', values: [0.78, -0.26, 8.36, 11.00], isBenchmark: false },
+            { name: 'Keyview Flagship Fund', values: [0.72, 2.18, 7.23, 10.22], isBenchmark: false },
+            { name: 'iPartners Core Income Series', values: [0.67, 2.02, 8.59, 8.85], isBenchmark: false },
+            { name: 'Aura Private Credit Income', values: [0.66, 1.94, 8.45, 9.27], isBenchmark: false },
+            { name: 'Manning Monthly Income Fund', values: [0.65, 2.09, 9.06, 9.37], isBenchmark: false },
+            { name: 'Metrics Direct Income Fund', values: [0.65, 1.94, 8.32, 8.97], isBenchmark: false },
+            { name: 'Merricks Capital Partners', values: [0.63, 1.73, 6.93, 8.51], isBenchmark: false },
+            { name: 'MA Priority Income Fund', values: [0.62, 1.24, 8.24, 8.32], isBenchmark: false },
+            { name: 'Epsilon Direct Lending A', values: [0.62, 1.99, 9.47, 9.93], isBenchmark: false },
+            { name: 'Revolution Private Debt II', values: [0.61, 1.93, 8.30, 8.69], isBenchmark: false },
+            { name: 'Aquasia Enhanced Credit Fund', values: [0.49, 1.73, 7.51, 8.99], isBenchmark: false },
+            { name: 'Challenger IM Credit Income Fund', values: [0.36, 1.67, 7.01, 8.20], isBenchmark: false },
+            { name: 'Ares Diversified Credit', values: [-0.61, 0.08, 6.00, 9.09], isBenchmark: false }
+        ]
+    },    domesticLargeCap: {
+        tableId: 'domesticLargeCapTable',
+        bodyId: 'domesticLargeCapBody',
+        hasFixedHeaders: true,
+        data: [
+            { name: 'L1 Capital Catalyst Fund - Founders Class', values: [2.08, 3.27, 14.03, 8.35], isBenchmark: false },
+            { name: 'Merlon Concentrated Australian Share Fund', values: [1.49, -1.04, 8.55, 10.23], isBenchmark: false },
+            { name: 'Perpetual ESG Australian Share Fund', values: [0.11, -3.87, 7.06, 10.38], isBenchmark: false },
+            { name: 'Ausbil Australian Active Equity Fund', values: [0.11, -3.87, 7.06, 10.38], isBenchmark: false },
+            { name: 'Perpetual Pure Value Share Fund', values: [-0.01, -3.25, 5.28, 7.89], isBenchmark: false },
+            { name: 'Martin Currie Real Income Fund Class A Units', values: [-0.18, 0.54, 9.69, 8.07], isBenchmark: false },
+            { name: 'Pengana Australian Equities Fund', values: [-0.25, -1.69, 8.79, 9.84], isBenchmark: false },
+            { name: 'Auscap High Conviction Australian Equities', values: [-0.27, 2.01, 12.85, 12.97], isBenchmark: false },
+            { name: 'Investors Mutual Concentrated Australian Share Fund', values: [-0.75, -5.23, 6.62, 5.02], isBenchmark: false },
+            { name: 'Investors Mutual Equity Income Fund', values: [-0.91, -2.71, 5.96, 7.13], isBenchmark: false },
+            { name: 'MVOL - iShares MSCI Aus Minimum Volatility ETF', values: [-0.96, -2.23, 10.21, 10.85], isBenchmark: false },
+            { name: 'Perpetual SHARE-PLUS Long-Short Fund - Class A', values: [-1.41, -3.24, 1.88, 6.32], isBenchmark: false },
+            { name: 'Firetrail Australian High Conviction Fund - Class A', values: [-1.43, -1.79, 9.81, 10.58], isBenchmark: false },
+            { name: 'AQLT - BetaShares Australian Quality ETF', values: [-1.53, -2.98, 11.19, 16.77], isBenchmark: false },
+            { name: 'AB Managed Volatility Equities Fund - MVE Class', values: [-1.59, -2.55, 6.42, 6.96], isBenchmark: false },
+            { name: 'Greencape Broadcap Fund', values: [-2.10, -1.66, -2.12, 8.28], isBenchmark: false },
+            { name: 'Perpetual Industrial Share Fund', values: [-2.35, -6.95, -0.39, 10.19], isBenchmark: false },
+            { name: 'Airlie Australian Share Fund', values: [-2.48, -5.70, -1.02, 6.86], isBenchmark: false },
+            { name: 'Greencape High Conviction Fund', values: [-2.50, -3.33, -3.86, 8.71], isBenchmark: false },
+            { name: 'Northcape Capital Core Australian Shares Fund', values: [-2.52, -4.99, -0.12, 8.22], isBenchmark: false },
+            { name: 'Regal Australian Long Short Equity Fund', values: [-2.56, -2.04, 5.42, 9.97], isBenchmark: false },
+            { name: 'Vanguard Australian Shares Index Fund', values: [-2.65, -2.89, 5.67, 9.50], isBenchmark: false },
+            { name: 'S&P/ASX 200 Accumulation', values: [-2.66, -3.05, 5.47, 9.71], isBenchmark: true },
+            { name: 'Fidelity Australian Equities Fund', values: [-3.02, -4.02, 2.85, 6.49], isBenchmark: false },
+            { name: 'The Montgomery Fund', values: [-3.36, -1.01, 4.20, 7.93], isBenchmark: false },
+            { name: 'Hyperion Australian Growth Companies Fund', values: [-6.28, -13.43, -17.35, 9.04], isBenchmark: false },
+            { name: 'Bennelong Twenty20 Australian Equities Fund', values: [-6.34, -8.77, -3.94, 6.82], isBenchmark: false },
+            { name: 'Smallco Broadcap Fund', values: [-6.41, -8.62, -9.80, 9.94], isBenchmark: false },
+            { name: 'Bennelong Concentrated Australian Equities Fund', values: [-10.13, -16.45, -19.10, -0.12], isBenchmark: false }
+        ]
+    },    domesticMidSmallCap: {
+        tableId: 'domesticMidSmallCapTable',
+        bodyId: 'domesticMidSmallCapBody',
+        hasFixedHeaders: true,
+        data: [
+            { name: 'Spheria Opportunities Fund', values: [1.90, 2.10, 16.36, 13.25], isBenchmark: false },
+            { name: 'S&P/ASX Midcap 50 Accumulation', values: [0.31, 1.59, 15.32, 11.44], isBenchmark: true },
+            { name: 'Maple-Brown Abbott Australian Small Companies Fund', values: [0.13, 3.25, 30.48, 21.29], isBenchmark: false },
+            { name: 'Paradice Australian Small Cap Opportunities Fund', values: [0.12, 13.44, 38.54, null], isBenchmark: false },
+            { name: 'EX20 - Betashares Aus Ex-20 Portfolio Diversifier ETF', values: [-0.57, 0.08, 10.78, 10.54], isBenchmark: false },
+            { name: 'UBS Australian Small Companies Fund Retail Class', values: [-0.58, 3.53, 21.72, 12.35], isBenchmark: false },
+            { name: 'Milford Dynamic Small Companies Fund', values: [-0.60, 4.77, 21.10, 16.70], isBenchmark: false },
+            { name: 'Eley Griffiths Group Small Companies Fund', values: [-1.00, 4.35, 26.11, 18.68], isBenchmark: false },
+            { name: '1851 Emerging Companies Fund', values: [-1.09, 4.98, 28.11, 18.06], isBenchmark: false },
+            { name: 'Blackwattle Mid Capital Quality', values: [-1.13, -1.07, 5.89, null], isBenchmark: false },
+            { name: 'Prime Value Emerging Opportunity Fund', values: [-1.23, 0.49, 11.62, 12.09], isBenchmark: false },
+            { name: 'Spheria Australian Smaller Companies Fund', values: [-1.25, 1.62, 21.59, 14.59], isBenchmark: false },
+            { name: 'Longwave Australian Small Companies', values: [-1.29, 2.40, 20.17, 12.43], isBenchmark: false },
+            { name: 'S&P/ASX Small Ords Accumulation', values: [-1.48, 3.84, 19.43, 11.49], isBenchmark: true },
+            { name: 'Regal Australian Small Companies Fund', values: [-1.50, 12.08, 19.71, 25.51], isBenchmark: false },
+            { name: 'ICE Fund', values: [-2.12, -1.54, 0.95, 10.32], isBenchmark: false },
+            { name: 'LSN Emerging Companies Fund', values: [-2.28, 4.51, 21.56, 16.72], isBenchmark: false },
+            { name: 'Fidelity Future Leaders', values: [-2.34, -0.19, 8.18, 14.56], isBenchmark: false },
+            { name: 'Lennox Australian Small Companies Fund', values: [-2.35, 0.87, 10.38, 15.46], isBenchmark: false },
+            { name: 'Pengana Emerging Companies Fund', values: [-3.44, -3.09, 11.63, 14.42], isBenchmark: false },
+            { name: 'Glenmore Australian Equities', values: [-3.76, -0.82, 10.05, 13.27], isBenchmark: false },
+            { name: 'The Elvest Fund', values: [-4.75, -4.21, 17.59, 17.83], isBenchmark: false },
+            { name: 'QVG Opportunities Fund', values: [-4.78, -2.25, 23.38, 17.26], isBenchmark: false },
+            { name: 'Ophir Opportunities Fund', values: [-4.95, 3.43, 33.30, 30.66], isBenchmark: false },
+            { name: 'Lakehouse Small Companies Fund', values: [-5.17, -1.90, 10.25, 21.87], isBenchmark: false },
+            { name: 'Ausbil Australian SmallCap Fund', values: [-5.89, -3.27, 25.90, 21.92], isBenchmark: false },
+            { name: 'Smallco Investment Fund', values: [-6.53, -8.98, -8.93, 11.58], isBenchmark: false },
+            { name: 'Bennelong ex-20 Australian Equities Fund', values: [-8.70, -14.44, -18.24, 0.93], isBenchmark: false },
+            { name: 'Hyperion Small Growth Companies Fund', values: [-9.30, -15.12, -8.42, 15.10], isBenchmark: false }
+        ]
+    },    domesticMicroCap: {
+        tableId: 'domesticMicroCapTable',
+        bodyId: 'domesticMicroCapBody',
+        hasFixedHeaders: true,
+        data: [
+            { name: 'Anacacia Wattle Fund', values: [1.70, 6.21, 18.97, 10.40], isBenchmark: false },
+            { name: 'Perpetual Pure Microcap Fund', values: [1.64, 5.89, 35.19, 14.92], isBenchmark: false },
+            { name: 'OC Micro-Cap Fund', values: [0.59, 10.06, 21.52, 13.06], isBenchmark: false },
+            { name: 'Microequities Deep Value Fund', values: [0.46, -0.08, 2.52, 6.96], isBenchmark: false },
+            { name: 'Pendal MicroCap Opportunities Fund', values: [0.07, 6.58, 26.43, 19.83], isBenchmark: false },
+            { name: 'SGH Emerging Companies Fund', values: [-0.05, 23.89, 47.39, 9.30], isBenchmark: false },
+            { name: 'Spheria Australian Microcap Fund', values: [-0.36, 2.17, 22.60, 15.80], isBenchmark: false },
+            { name: 'Armytage Micro Cap Activist Fund', values: [-1.09, 4.23, 29.29, 12.99], isBenchmark: false },
+            { name: 'S&P/ASX Emerging Companies Accumulation', values: [-1.27, 11.52, 27.42, 12.04], isBenchmark: true },
+            { name: 'UBS Microcap Fund Retail Class', values: [-2.22, 7.88, 39.74, 19.59], isBenchmark: false },
+            { name: 'Eley Griffiths Group Emerging Companies Fund', values: [-3.17, 3.21, 19.38, 19.07], isBenchmark: false },
+            { name: 'Ellerston Australian Microcap Fund', values: [-3.94, 4.65, 34.13, 22.78], isBenchmark: false },
+            { name: 'Ausbil MicroCap Fund', values: [-4.56, 5.23, 34.50, 22.53], isBenchmark: false },
+            { name: 'Bennelong Emerging Companies Fund', values: [-6.79, -5.02, 16.91, 23.29], isBenchmark: false },
+            { name: 'Pengana High Conviction Equities Fund', values: [-8.67, 10.04, 37.14, 45.40], isBenchmark: false },
+            { name: 'Perennial Value Microcap Opportunities Trust', values: [-9.11, -1.79, -7.83, -1.96], isBenchmark: false }
+        ]
+    },    internationalEquities: {
+        tableId: 'internationalEquitiesTable',
+        bodyId: 'internationalEquitiesBody',
+        hasFixedHeaders: true,
+        data: [
+            { name: 'Antipodes Global Fund - (Class P)', values: [4.08, 9.81, 34.51, 19.68], isBenchmark: false },
+            { name: 'PM Capital Global Companies Fund', values: [3.95, 7.96, 34.55, 23.94], isBenchmark: false },
+            { name: 'State Street Global Equity Fund', values: [3.24, 6.68, 16.90, 13.25], isBenchmark: false },
+            { name: 'Talaria Global Equity Fund Complex ETF', values: [2.50, 1.61, 9.57, 8.91], isBenchmark: false },
+            { name: 'Paradice Global Small Mid Cap Fund', values: [1.70, -1.53, 4.23, 6.63], isBenchmark: false },
+            { name: 'IFP Global Franchise Fund', values: [1.57, -0.78, 13.00, 17.13], isBenchmark: false },
+            { name: 'QUAL - VanEck MSCI Intl Quality ETF', values: [1.22, 6.67, 11.45, 20.95], isBenchmark: false },
+            { name: 'Pengana Global Small Companies Fund', values: [1.02, -0.86, 7.39, 7.53], isBenchmark: false },
+            { name: 'Pzena Global Focused Value Fund - Retail', values: [0.94, 2.69, 14.63, 15.23], isBenchmark: false },
+            { name: 'MFS Global Equity Trust', values: [0.89, 1.40, 7.31, 10.18], isBenchmark: false },
+            { name: 'Claremont Global Fund', values: [0.86, -2.68, -0.01, 9.02], isBenchmark: false },
+            { name: 'MFS Global New Discovery Trust', values: [0.35, -2.50, 0.86, 8.87], isBenchmark: false },
+            { name: 'Fiducian India Fund', values: [0.35, 5.77, -5.37, 8.57], isBenchmark: false },
+            { name: 'Platinum International Brands Fund', values: [0.28, -5.04, 5.40, 5.97], isBenchmark: false },
+            { name: 'MSCI World ex Australia Index (AUD)', values: [0.20, 5.64, 16.98, 20.72], isBenchmark: true },
+            { name: 'Magellan Global Open Class', values: [0.14, 2.39, 7.62, 15.93], isBenchmark: false },
+            { name: 'Partners Group Global Multi-Asset Fund', values: [0.02, 0.27, 4.38, 6.09], isBenchmark: false },
+            { name: 'Apis Global Long/Short Fund', values: [-0.07, 10.56, 48.63, 21.71], isBenchmark: false },
+            { name: 'Fidelity Global Future Leaders Fund', values: [-0.23, -0.20, 3.87, 12.29], isBenchmark: false },
+            { name: 'Platinum Japan Fund', values: [-0.42, 1.59, 23.90, 10.86], isBenchmark: false },
+            { name: 'Capital Group New Perspective (AU)', values: [-0.52, 4.51, 17.12, 19.30], isBenchmark: false },
+            { name: 'Aoris International Fund', values: [-0.97, -2.64, 5.08, 16.12], isBenchmark: false },
+            { name: 'Stewart Worldwide Leaders Sustainability', values: [-1.19, 0.51, 2.54, 12.55], isBenchmark: false },
+            { name: 'Fidelity China Fund', values: [-1.20, 2.33, 28.60, 9.74], isBenchmark: false },
+            { name: 'Franklin Global Growth Fund -  Class A', values: [-1.56, -1.68, -2.32, 8.99], isBenchmark: false },
+            { name: 'Nanuk New World Fund', values: [-1.56, 4.65, 16.93, 19.02], isBenchmark: false },
+            { name: 'Anacacia Global Fund', values: [-1.65, -9.44, -0.95, 5.84], isBenchmark: false },
+            { name: 'Minotaur Global Opportunities Fund', values: [-1.91, 2.85, 19.76, null], isBenchmark: false },
+            { name: 'L1 Capital International Fund (Daily Class)', values: [-1.98, 0.95, 10.50, 21.71], isBenchmark: false },
+            { name: 'Platinum Asia Fund', values: [-2.27, 8.77, 28.05, 14.08], isBenchmark: false },
+            { name: 'Platinum International Fund', values: [-2.28, 6.73, 16.23, 8.34], isBenchmark: false },
+            { name: 'Ophir Global Opportunities Fund', values: [-2.79, 2.10, 22.62, 24.05], isBenchmark: false },
+            { name: 'Ophir Global High Conviction Fund', values: [-2.95, -1.79, 12.67, 20.13], isBenchmark: false },
+            { name: 'ECP Global Growth Fund', values: [-5.11, -9.17, -12.49, 8.38], isBenchmark: false },
+            { name: 'Loftus Peak Global Disruption Fund', values: [-6.35, 3.88, 17.16, 31.31], isBenchmark: false },
+            { name: 'Baillie Gifford Wholesale Long Term Global Growth', values: [-7.12, -0.63, 13.28, 24.08], isBenchmark: false },
+            { name: 'Lakehouse Global Growth Fund', values: [-7.49, -11.65, -3.91, 21.04], isBenchmark: false },
+            { name: 'Hyperion Global Growth Companies Fund', values: [-8.33, 0.53, 11.52, 32.56], isBenchmark: false },
+            { name: 'ARK Global Disruptive Innovation Fund', values: [-8.85, 5.77, 31.42, 29.94], isBenchmark: false },
+            { name: 'Frazis Fund', values: [-11.52, 1.07, 26.43, 33.06], isBenchmark: false }
+        ]
+    },    infraReits: {
+        tableId: 'infraReitsTable',
+        bodyId: 'infraReitsBody',
+        hasFixedHeaders: false,
+        data: [
+            { name: '4D Global Infrastructure Fund (AUD Hedged)', values: [3.56, 6.87, 15.11, 9.62], isBenchmark: false },
+            { name: 'ClearBridge Global Infrastructure Value Hedged A', values: [3.05, 7.05, 12.49, 8.71], isBenchmark: false },
+            { name: 'Lazard Global Listed Infrastructure Active ETF', values: [2.95, 7.28, 22.55, 7.24], isBenchmark: false },
+            { name: 'Magellan Infrastructure Fund', values: [2.03, 5.04, 13.12, 8.04], isBenchmark: false },
+            { name: 'Ausbil Global Essential Infrastructure Fund - Hedged', values: [1.94, 5.65, 8.24, 5.97], isBenchmark: false },
+            { name: 'CBRE Global Property Securities Fund (Hedged)', values: [1.76, 1.75, -0.36, 4.61], isBenchmark: false },
+            { name: 'Maple-Brown Abbott Global Listed Infrastructure', values: [1.69, 3.44, 11.69, 8.74], isBenchmark: false },
+            { name: 'ATLAS Infrastructure Global Fund - Hedged Class', values: [1.52, 6.77, 15.39, 7.63], isBenchmark: false },
+            { name: 'Quay Global Real Estate Fund (Unhedged)', values: [1.18, -1.29, -3.67, 6.92], isBenchmark: false },
+            { name: 'Vanguard Australian Property Securities Index Fund', values: [-3.73, -6.03, 0.98, 12.09], isBenchmark: false }
+        ]
+    },    other: {
+        tableId: 'otherTable',
+        bodyId: 'otherBody',
+        hasFixedHeaders: true,
+        data: [
+            { name: 'Spot Silver - AU$ / Oz', values: [17.29, 40.34, 83.15, 38.88], isBenchmark: false },
+            { name: 'GDX - VanEck Gold Miners ETF', values: [14.89, 31.69, 122.63, 45.25], isBenchmark: false },
+            { name: 'Terra Capital Natural Resource Fund', values: [13.11, 28.88, 103.96, null], isBenchmark: false },
+            { name: 'Regal Emerging Companies Opportunities Fund', values: [11.06, 23.81, 28.23, 15.84], isBenchmark: false },
+            { name: 'Totus Alpha Fund - Platform Class', values: [7.95, 7.31, 6.95, 4.22], isBenchmark: false },
+            { name: 'L1 Capital Long Short Fund - Daily Class', values: [7.50, 14.75, 35.48, 16.96], isBenchmark: false },
+            { name: 'Spot Gold - AU$ / Oz', values: [6.08, 21.37, 58.07, 35.19], isBenchmark: true },
+            { name: 'Bronte Capital Amalthea', values: [5.84, -4.65, -6.39, 3.70], isBenchmark: false },
+            { name: 'Aspect Diversified Futures Fund Class A', values: [2.24, 10.25, -2.07, 1.26], isBenchmark: false },
+            { name: 'Firetrail Absolute Return Fund - Class A', values: [2.02, 6.30, 20.03, 12.99], isBenchmark: false },
+            { name: 'CC Sage Capital Absolute Return Fund', values: [1.59, 0.78, -1.35, 2.44], isBenchmark: false },
+            { name: 'Winton Global Alpha Fund', values: [1.52, 7.02, 4.86, 5.75], isBenchmark: false },
+            { name: 'PIMCO TRENDS Managed Futures Strategy Fund', values: [1.37, 7.15, 3.36, -4.25], isBenchmark: false },
+            { name: 'Harvest Lane Absolute Return Fund', values: [0.61, 4.59, 11.21, 13.41], isBenchmark: false },
+            { name: 'Regal Resources Long Short Fund - Class A Units', values: [0.48, 3.31, 1.16, 5.90], isBenchmark: false },
+            { name: 'Vanguard Conservative Index Fund', values: [-0.39, 1.42, 6.49, 6.70], isBenchmark: false },
+            { name: 'Samuel Terry Absolute Return Group - A Class', values: [-0.52, 4.34, 16.03, 13.78], isBenchmark: false },
+            { name: 'Vanguard Balanced Index Fund', values: [-0.57, 1.71, 8.17, 8.90], isBenchmark: false },
+            { name: 'Perennial Strategic Natural Resources Trust', values: [-0.70, 20.86, 46.37, 26.20], isBenchmark: false },
+            { name: 'Vanguard Growth Index Fund', values: [-0.71, 1.92, 9.74, 11.22], isBenchmark: false },
+            { name: 'AQR Wholesale Managed Futures Fund - Class 1P', values: [-0.73, 9.47, 27.14, 11.98], isBenchmark: false },
+            { name: 'Vanguard High Growth Index Fund', values: [-0.90, 2.14, 11.29, 13.52], isBenchmark: false },
+            { name: 'Perennial Microcap Resources Trust', values: [-1.64, 26.70, 68.59, 32.05], isBenchmark: false },
+            { name: 'Ironbark GCM Global Macro Fund', values: [-1.81, -1.27, -5.95, -3.30], isBenchmark: false },
+            { name: 'CC Sage Capital Equity Plus Fund', values: [-2.00, -3.07, 2.76, 8.75], isBenchmark: false },
+            { name: 'Regal Tasman Market Neutral Fund', values: [-2.66, 6.08, 10.63, 5.80], isBenchmark: false },
+            { name: 'QVG Long Short Fund', values: [-4.81, -2.48, 8.78, 15.58], isBenchmark: false },
+            { name: 'Atlantic Absolute Return Fund', values: [-5.37, 28.89, -3.75, 8.66], isBenchmark: false },
+            { name: 'Perpetual Geared Australian Share Fund', values: [-5.51, -11.68, -8.12, 3.01], isBenchmark: false },
+            { name: 'Australian Eagle Trust', values: [-5.76, -3.54, 3.98, 4.54], isBenchmark: false },
+            { name: 'Ten Cap Alpha Plus Fund - Class A Units', values: [-5.90, -6.47, -0.18, 8.99], isBenchmark: false }
+        ]
+    },    gicsSectors: {
+        tableId: 'gicsSectorsTable',
+        bodyId: 'gicsSectorsBody',
+        hasFixedHeaders: true,
+        data: [
+            { name: 'S&P/ASX All Ordinaries Gold Accumulation', values: [9.96, 37.38, 100.31, 47.80, 21.16, 24.57], isBenchmark: false },
+            { name: 'S&P/ASX 200 HealthCare Accumulation', values: [1.99, -6.97, -19.31, -4.30, -2.40, 7.93], isBenchmark: false },
+            { name: 'S&P/ASX 200 Staples Accumulation', values: [1.64, -2.71, 5.59, 1.08, 2.45, 7.19], isBenchmark: false },
+            { name: 'S&P/ASX 200 Materials Accumulation', values: [1.55, 12.37, 21.95, 8.27, 12.37, 16.17], isBenchmark: false },
+            { name: 'S&P/ASX 200 Energy Accumulation', values: [-0.57, -7.01, 5.44, -3.37, 6.91, 4.24], isBenchmark: false },
+            { name: 'S&P/ASX 200 Utilities Accumulation', values: [-2.06, -0.84, 14.88, 11.07, 13.37, 9.35], isBenchmark: false },
+            { name: 'S&P/ASX 200 Telecoms Accumulation', values: [-2.30, -6.07, 9.77, 11.18, 10.73, 3.38], isBenchmark: false },
+            { name: 'S&P/ASX 200 Discretion Accumulation', values: [-2.64, -10.12, 6.12, 14.64, 10.12, 11.46], isBenchmark: false },
+            { name: 'S&P/ASX 200 Accumulation', values: [-2.66, -3.05, 5.47, 9.71, 9.87, 9.46], isBenchmark: true },
+            { name: 'S&P/ASX 200 Industrial Accumulation', values: [-3.80, -6.45, 0.83, 10.85, 9.25, 8.31], isBenchmark: false },
+            { name: 'S&P/ASX 200 A-REIT Accumulation', values: [-3.85, -6.28, 0.77, 12.71, 8.51, 8.12], isBenchmark: false },
+            { name: 'S&P/ASX 200 Fin-x-Prop Accumulation', values: [-6.53, -6.46, 3.85, 15.86, 15.30, 8.69], isBenchmark: false },
+            { name: 'S&P/ASX 200 Info Tech Accumulation', values: [-11.58, -20.71, -17.08, 17.32, 3.92, 13.05], isBenchmark: false }
+        ]
+    },    crypto: {
+        tableId: 'cryptoTable',
+        bodyId: 'cryptoBody',
+        hasFixedHeaders: false,
+        data: [
+            { name: 'Bitcoin(BTC) Price in AUD', values: [-16.44, -17.09, -6.90, 76.13], isBenchmark: false },
+            { name: 'Ethereum(ETH) Price in AUD', values: [-21.26, -31.74, -19.79, 33.82], isBenchmark: false }
+        ]
+    }
+};
+
+// ============================================
+// SORT STATE MANAGEMENT
+// ============================================
+
+const sortStates = {};
+
+Object.keys(tableConfig).forEach(key => {
+    sortStates[key] = { column: 0, direction: 'desc' };
+});
+
+// ============================================
+// UTILITY FUNCTIONS
+// ============================================
+
+function getMinMax(tableKey, colIndex) {
+    const data = tableConfig[tableKey].data;
+    const validValues = data
+        .map(row => row.values[colIndex])
+        .filter(v => v !== null && v !== undefined);
+    
+    if (validValues.length === 0) {
+        return { max: NaN, min: NaN };
+    }
+    
+    return {
+        max: Math.max(...validValues),
+        min: Math.min(...validValues),
+    };
+}
+
+function formatValue(val) {
+    if (val === null || val === undefined) return '−';
+    return `${val.toFixed(2)}%`;
+}
+
+function getCellHighlight(tableKey, value, colIndex) {
+    if (value === null || value === undefined) return '';
+    const { min, max } = getMinMax(tableKey, colIndex);
+    if (value === max) return 'highlight-max';
+    if (value === min) return 'highlight-min';
+    return '';
+}
+
+// ============================================
+// SORTING & RENDERING
+// ============================================
+
+function handleSort(tableKey, colIndex) {
+    if (!sortStates[tableKey]) {
+        console.error(`Table key "${tableKey}" not found in sortStates`);
+        return;
+    }
+    
+    const state = sortStates[tableKey];
+    
+    if (state.column === colIndex) {
+        state.direction = state.direction === 'desc' ? 'asc' : 'desc';
+    } else {
+        state.column = colIndex;
+        state.direction = 'desc';
+    }
+    
+    renderTable(tableKey);
+    updateSortIndicators(tableKey);
+}
+
+function renderTable(tableKey) {
+    const config = tableConfig[tableKey];
+    const state = sortStates[tableKey];
+    
+    if (!config) {
+        console.error(`Table configuration for "${tableKey}" not found`);
+        return;
+    }
+    
+    let sortedData = [...config.data];
+    
+    if (state.column !== null) {
+        sortedData.sort((a, b) => {
+            const aVal = a.values[state.column];
+            const bVal = b.values[state.column];
+            
+            if (aVal === null || aVal === undefined) return 1;
+            if (bVal === null || bVal === undefined) return -1;
+            
+            return state.direction === 'desc' ? bVal - aVal : aVal - bVal;
+        });
+    }
+    
+    const tbody = document.getElementById(config.bodyId);
+    if (!tbody) {
+        console.error(`Table body with ID "${config.bodyId}" not found`);
+        return;
+    }
+    
+    tbody.innerHTML = '';
+    
+    sortedData.forEach(row => {
+        const tr = document.createElement('tr');
+        if (row.isBenchmark) tr.classList.add('benchmark');
+        
+        const nameCell = document.createElement('td');
+        nameCell.textContent = row.name;
+        tr.appendChild(nameCell);
+        
+        row.values.forEach((val, colIdx) => {
+            const td = document.createElement('td');
+            td.textContent = formatValue(val);
+            
+            const highlightClass = getCellHighlight(tableKey, val, colIdx);
+            if (highlightClass) td.classList.add(highlightClass);
+            if (val !== null && val < 0) td.classList.add('negative');
+            
+            tr.appendChild(td);
+        });
+        
+        tbody.appendChild(tr);
+    });
+}
+
+function updateSortIndicators(tableKey) {
+    const config = tableConfig[tableKey];
+    const state = sortStates[tableKey];
+    const table = document.getElementById(config.tableId);
+    
+    if (!table) {
+        console.error(`Table with ID "${config.tableId}" not found`);
+        return;
+    }
+    
+    const headers = table.querySelectorAll('.column-header th');
+    
+    headers.forEach((th, idx) => {
+        const div = th.querySelector('.sort-header');
+        if (!div) return;
+        
+        const existingChevron = div.querySelector('.chevron');
+        if (existingChevron) existingChevron.remove();
+        
+        if (idx - 1 === state.column) {
+            const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svg.setAttribute('class', 'chevron');
+            svg.setAttribute('viewBox', '0 0 24 24');
+            svg.setAttribute('fill', 'none');
+            svg.setAttribute('stroke', 'currentColor');
+            svg.setAttribute('stroke-width', '2');
+            svg.setAttribute('stroke-linecap', 'round');
+            svg.setAttribute('stroke-linejoin', 'round');
+            
+            const polyline = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+            if (state.direction === 'desc') {
+                polyline.setAttribute('points', '6 9 12 15 18 9');
+            } else {
+                polyline.setAttribute('points', '18 15 12 9 6 15');
+            }
+            svg.appendChild(polyline);
+            div.appendChild(svg);
+        }
+    });
+}
+
+// ============================================
+// INITIALIZATION
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    Object.keys(tableConfig).forEach(tableKey => {
+        renderTable(tableKey);
+        updateSortIndicators(tableKey);
+    });
+});
+</script>
+
+</body>
+</html>
