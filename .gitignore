@@ -1,0 +1,113 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ===========================================
+# Project-specific ignores
+# ===========================================
+
+# Generated performance data (timestamped CSVs)
+fund_performance_*.csv
+
+# Generated newsletters
+newsletter_*.html
+
+# Generated reports
+fund_report_*.txt
+
+# Benchmark data (auto-fetched)
+benchmark_data.csv
+
+# PDF scraper output
+performance_data.csv
+
+# Downloaded PDFs
+index/pdfs/
+index/Sep25/
+index/oct25/
+*.pdf
+
+# Old/archive folders
+Old/
+
+# Excel temp files
+~$*.xlsx
+*.xlsx.tmp
+
+# Log files
+*.log
