@@ -35,4 +35,4 @@ html_content = re.sub(r'<main>\s*', '', html_content)
 html_content = re.sub(r'\s*</main>', '', html_content)
 
 # Use a very tall height so iframe doesn't scroll internally
-st.components.v1.html(html_content, height=8000, scrolling=False)
+st.components.v1.html(html_content, height=15000, scrolling=False)
