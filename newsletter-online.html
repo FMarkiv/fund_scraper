@@ -15,8 +15,8 @@
         body {
             font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
             line-height: 1.6;
-            color: #111;
-            background-color: #fffff8;
+            color: #d1d5db;
+            background-color: #16161e;
             display: flex;
             flex-direction: column;
             max-width: 55em;
@@ -27,7 +27,7 @@
         header {
             width: 100%;
             padding-bottom: 1.5em;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #2d2d3d;
             margin-bottom: 1.5em;
         }
 
@@ -45,7 +45,7 @@
         nav a {
             margin-bottom: 0.5em;
             font-size: 0.9em;
-            color: #0066cc;
+            color: #60a5fa;
             text-decoration: none;
         }
 
@@ -70,7 +70,7 @@
         h2.essay-title {
             font-weight: bold;
             margin-top: 2.5em;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #3d3d4d;
             padding-top: 1.5em;
         }
 
@@ -114,25 +114,25 @@
 
         .image-container figcaption {
             font-size: 0.8em;
-            color: #666;
+            color: #9ca3af;
             font-style: italic;
             margin-top: 0.5em;
         }
 
         hr {
             border: none;
-            border-top: 2px solid #ddd;
+            border-top: 2px solid #3d3d4d;
             margin: 2.5em 0;
         }
 
         /* TABLE STYLES */
         .table-container {
-            background: white;
-            border: 1px solid #e5e7eb;
+            background: #1e1e2a;
+            border: 1px solid #2d2d3d;
             margin: 1.5em 0;
             width: 100%;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
         .table-overflow {
@@ -145,10 +145,10 @@
         @media (max-width: 767px) {
             .table-overflow {
                 background:
-                    linear-gradient(to right, white 30%, rgba(255,255,255,0)),
-                    linear-gradient(to right, rgba(255,255,255,0), white 70%) 100% 0,
-                    linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0)),
-                    linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0)) 100% 0;
+                    linear-gradient(to right, #1e1e2a 30%, rgba(30,30,42,0)),
+                    linear-gradient(to right, rgba(30,30,42,0), #1e1e2a 70%) 100% 0,
+                    linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0)),
+                    linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0)) 100% 0;
                 background-repeat: no-repeat;
                 background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
                 background-attachment: local, local, scroll, scroll;
@@ -183,16 +183,16 @@
         }
 
         thead tr:not(.column-header) {
-            background-color: #f3f4f6;
-            border-bottom: 1px solid #d1d5db;
+            background-color: #232333;
+            border-bottom: 1px solid #3d3d4d;
         }
 
         thead tr:not(.column-header) td {
             padding: 0.2rem 1rem;
             font-weight: normal;
-            color: #111;
+            color: #d1d5db;
             text-align: right;
-            border-right: 1px solid #d1d5db;
+            border-right: 1px solid #3d3d4d;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -207,8 +207,8 @@
         }
 
         .column-header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #1a2536;
+            color: #e5e7eb;
             position: sticky;
             top: 0;
             z-index: 20;
@@ -218,7 +218,7 @@
             padding: 0.35rem 1rem;
             text-align: right;
             font-weight: 600;
-            border-right: 1px solid #1a252f;
+            border-right: 1px solid #152030;
             cursor: pointer;
             user-select: none;
             white-space: nowrap;
@@ -236,7 +236,7 @@
         }
 
         .column-header th:hover:not(:first-child) {
-            background-color: #1a252f;
+            background-color: #243444;
         }
 
         .sort-header {
@@ -258,34 +258,34 @@
         }
 
         tbody tr {
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid #2d2d3d;
             transition: background-color 0.15s ease;
         }
 
         tbody tr.benchmark {
-            background-color: #fff4e5;
+            background-color: #2a2010;
         }
 
         tbody tr:not(.benchmark):nth-child(even) {
-            background-color: #fafaf9;
+            background-color: #1c1c2c;
         }
 
         tbody tr:not(.benchmark):hover {
-            background-color: #f5f5f4;
+            background-color: #262638;
         }
 
         tbody td {
             padding: 0.2rem 1rem;
-            border-right: 1px solid #e5e7eb;
+            border-right: 1px solid #2d2d3d;
             text-align: right;
             white-space: nowrap;
-            color: #111;
+            color: #d1d5db;
         }
 
         tbody td:first-child {
             text-align: left;
             font-weight: 500;
-            border-right: 1px solid #e5e7eb;
+            border-right: 1px solid #2d2d3d;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -295,28 +295,28 @@
         }
 
         tbody td.highlight-max {
-            background-color: #d1d5db;
+            background-color: #2d4a2d;
             font-weight: 600;
         }
 
         tbody td.highlight-min {
-            background-color: #fef9c3;
+            background-color: #4a3d10;
             font-weight: 600;
         }
 
         tbody td.negative {
-            color: #dc2626;
+            color: #f87171;
             font-weight: 600;
         }
 
         .table-legend {
             margin-top: 0;
             padding: 0.5rem 0.75rem;
-            background-color: #fafaf9;
-            border: 1px solid #e5e7eb;
+            background-color: #1c1c2c;
+            border: 1px solid #2d2d3d;
             border-top: none;
             font-size: 0.75em;
-            color: #666;
+            color: #9ca3af;
         }
 
         .legend-items {
@@ -336,19 +336,19 @@
             width: 0.75rem;
             height: 0.75rem;
             flex-shrink: 0;
-            border: 1px solid #ddd;
+            border: 1px solid #555;
         }
 
         .legend-color.max {
-            background-color: #d1d5db;
+            background-color: #2d4a2d;
         }
 
         .legend-color.min {
-            background-color: #fef9c3;
+            background-color: #4a3d10;
         }
 
         .legend-color.benchmark {
-            background-color: #fff4e5;
+            background-color: #2a2010;
             border-color: #f90;
         }
 
@@ -366,13 +366,13 @@
         h3.essay-subsection {
             font-size: 1.1em;
             font-weight: 600;
-            color: #333;
+            color: #b4b4bd;
         }
 
         /* Notes section */
         .notes-section {
             font-size: 0.9em;
-            color: #444;
+            color: #a1a1aa;
         }
 
         .notes-section p {
@@ -380,7 +380,7 @@
         }
 
         .notes-section a {
-            color: #0066cc;
+            color: #60a5fa;
             text-decoration: none;
         }
 
@@ -406,7 +406,7 @@
         .source-line {
             text-align: center;
             font-size: 0.85em;
-            color: #666;
+            color: #9ca3af;
             font-style: italic;
             margin-top: -0.5em;
         }
