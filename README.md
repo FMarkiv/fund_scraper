@@ -1,13 +1,11 @@
-# Fund Scraper & Newsletter Generator
+# Fund Scraper 
 
-Automated system for generating monthly financial newsletters for Australian investment funds. Scrapes fund performance data from InvestSmart, fetches commodity/crypto benchmarks, extracts S&P sector indices from PDFs, and generates professional HTML newsletters.
+Automated system for Scrapeing fund performance data from InvestSmart, fetches commodity/crypto benchmarks, extracts S&P sector indices from PDFs, 
 
-## Features
 
 - **Web Scraping**: Automated Selenium-based scraping from InvestSmart.com.au
 - **Benchmark Data**: Auto-fetches Gold, Silver, Bitcoin, Ethereum prices via yfinance
 - **PDF Extraction**: Extracts S&P Global sector performance from PDF factsheets
-- **Newsletter Generation**: Produces responsive HTML newsletters with sortable tables
 - **Coverage Tracking**: Validates scraping success and tracks month-over-month changes
 
 ## Installation
@@ -26,25 +24,21 @@ pip install -r requirements.txt
 ```
 fund_scraper/
 ├── fund_scraper.py        # Main InvestSmart web scraper
-├── generate_newsletter.py # HTML newsletter generator
-├── fetch_benchmarks.py    # Gold/Silver/BTC/ETH price fetcher
 ├── check_coverage.py      # Scrape validation tool
 ├── merge_sp_data.py       # S&P PDF data merger
 ├── index/
 │   ├── pdfscraper.py      # S&P PDF factsheet extractor
 │   ├── splinks.py         # S&P factsheet downloader
 │   ├── sp_links.xlsx      # S&P index URLs
-│   └── gics_links.xlsx    # GICS sector URLs
 ├── fund_config.xlsx       # Master fund configuration
 ├── fund_links.xlsx        # Fund URLs for scraping
-├── manual_data.xlsx       # Manual data (CPI, GICS, crypto)
-├── commentary.md          # Newsletter commentary template
+├── manual_data.xlsx       # Manual data (CPI, GICS, Benchmarks)
 └── requirements.txt       # Python dependencies
 ```
 
 ## Monthly Workflow
 
-### Phase 1: Data Collection (Day Before Newsletter)
+### Phase 1: Data Collection
 
 #### Step 1: Scrape Fund Performance
 ```bash
@@ -77,43 +71,32 @@ python merge_sp_data.py
 - Maps PDF filenames to fund names
 - Updates `manual_data.xlsx` (GICS_Sectors sheet)
 
-### Phase 2: Newsletter Generation (Newsletter Day)
+### Phase 2: table Generation
 
 #### Step 1: Fetch Benchmark Prices
 ```bash
-python fetch_benchmarks.py --date 2025-11-30
+python fetch_benchmarks.py --date 2022-03-31
 ```
 - Fetches Gold, Silver, BTC, ETH prices as of specified date
 - Calculates 1M, 3M, 1Y, 3Y returns
 - Outputs: `benchmark_data.csv`
 
-#### Step 2: Write Commentary
-Edit `commentary.md` with your market insights for each asset class:
-```markdown
-## Fixed Income
-[Your commentary here...]
 
-## Domestic Large Cap
-[Your commentary here...]
 
-## Thought of the Month
-[Your essay here...]
-```
-
-#### Step 3: Generate Newsletter (Preview)
+#### Step 3: Generate Table (Preview)
 ```bash
-python generate_newsletter.py --month 2025-11 --preview
+python generate.py --month 2026-03 --preview
 ```
 - Merges all data sources
-- Generates HTML newsletter
+- Generates HTML
 - Opens in browser for review
 
-#### Step 4: Generate Final Newsletter
+#### Step 4: Generate Final 
 ```bash
-python generate_newsletter.py --month 2025-11
+python generate.py --month 2026-03
 ```
-- Outputs: `newsletter_2025_11.html`
-- Upload to website and email service (e.g., Beehiiv)
+- Outputs: `final.html`
+- Upload to website 
 
 ### Phase 3: Validation
 
@@ -142,7 +125,7 @@ fund_links.xlsx ──────────────────┐
                                   │
                                   ├──────────────────────┐
                                   ▼                      ▼
-                         generate_newsletter.py    check_coverage.py
+                         generate.py    check_coverage.py
                                   ▲
           ┌───────────────────────┼───────────────────────┐
           │                       │                       │
@@ -185,20 +168,6 @@ Three sheets:
 - `GICS_Sectors`: S&P sector data (auto-populated by merge_sp_data.py)
 - `Other_Manual`: Fallback data for funds that can't be scraped
 
-## Asset Classes
-
-| Asset Class | Benchmark | Notes |
-|-------------|-----------|-------|
-| Fixed Income | CPI variants | Shows CPI outperformance stats |
-| Private Credit | - | No benchmark comparison |
-| Domestic Large Cap | S&P/ASX 200 | Shows % outperforming benchmark |
-| Domestic Mid/Small Cap | S&P/ASX Small Ords | Dual benchmark support |
-| Domestic Micro Cap | S&P/ASX Emerging | Shows % outperforming benchmark |
-| International Equities | Various | Shows % outperforming benchmark |
-| Infra + REITs | - | No benchmark legend |
-| Other | Spot Gold | Gold-focused funds |
-| GICS Sectors | S&P/ASX 200 | Includes 5Y and 10Y columns |
-| Crypto | - | BTC, ETH benchmarks |
 
 ## Troubleshooting
 
